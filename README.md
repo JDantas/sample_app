@@ -1,24 +1,26 @@
-# README
+# Aplicação exemplo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Iniciando
 
-Things you may want to cover:
+Para iniciar, faça um clone do repositório e instale todas as GEMS:
 
-* Ruby version
+```
+$ bundle install --without production
+```
 
-* System dependencies
+Depois rode a migration do banco:
 
-* Configuration
+```
+$ rails db:migrate
+```
 
-* Database creation
+Depois rode todos os testes para verficar se está rodando corretamente:
 
-* Database initialization
+```
+$ rails test
+```
 
-* How to run the test suite
+Se os testes passarem, pode rodar usando o servidor local:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ rails server
