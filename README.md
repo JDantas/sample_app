@@ -24,3 +24,4 @@ Se os testes passarem, pode rodar usando o servidor local:
 
 ```
 $ rails server
+```
