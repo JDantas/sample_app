@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: home/www
+    destination: /home/ec2-user/www
 permissions:
-  - object: home/www
+  - object: /home/ec2-user/www
     owner: ec2-user
     group: wheel
   AfterInstall:
