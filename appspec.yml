@@ -1,4 +1,4 @@
-version: 0.0
+version: 1.0
 os: linux
 files:
   - source: /
@@ -7,9 +7,9 @@ permissions:
   - object: /home/ec2-user/www
     owner: ec2-user
     group: wheel
-  AfterInstall:
+  - AfterInstall:
     - location: script/AfterInstall.sh
       runas: ec2-user
-  ApplicationStart:
+  - ApplicationStart:
     - location: script/ApplicationStart.sh
       runas: <root user>
